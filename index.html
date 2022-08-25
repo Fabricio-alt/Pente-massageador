@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Adm 010 Noite</h1>
+    </header>
+    <div class="contador">
+      <div id="timer"></div>
+    </div>
+
+    <main>
+      <section class="produto alinhamento-produto">
+        <h2 class="subtitulo">
+          Aproveite a Promoção!
+        </h2>
+        <p>
+          É por tempo limitado.
+        </p>
+        <div class="imagem">
+          <img src="pente.png" />
+        </div>
+      </section>
+      <section class="container-form alinhamento-form">
+        <h2>Preencha com seus dados</h2>
+        <p class="promocao">
+          Cadastre seus dados e Adquira já o seu.<br />
+          E ainda ganhe 10% de desconto por aqui
+        </p>
+        <div class="form">
+          <form action="">
+            <div>
+              <label for="">Nome: *</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Seu Nome Completo"
+                required
+              />
+            </div>
+            <div>
+              <label for="">Email: *</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Seu Melhor Email"
+                required
+              />
+            </div>
+            <div>
+              <label for="">WhatsApp DDD+Número</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="(**) * ****-****"
+                required
+              />
+            </div>
+
+            <button onclick="enviar()">Concluir</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+    <script>
+      function enviar() {
+        alert("Obrigado! Entraremos em contato o mais breve possível");
+        document.querySelector("input").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
