@@ -84,8 +84,16 @@
     <script src="main.js"></script>
     <script>
       function enviar() {
-        alert("Obrigado! Entraremos em contato o mais breve possível");
-        document.querySelector("input").innerHTML = "";
+        if (
+          document.querySelector("#nome").value == "" ||
+          document.querySelector("#email").value == "" ||
+          document.querySelector("#phone").value == ""
+        ) {
+          alert("Preencha os campos vazios!");
+        } else {
+          alert("Obrigado! Entraremos em contato o mais breve possível");
+          document.querySelector("input").innerHTML = "";
+        }
       }
     </script>
   </body>
